@@ -1,5 +1,8 @@
 .contact-section {
-  padding: 5rem 0 0;
+  padding: 2rem 0 0;
+  .arrowUp {
+    font-size: 3rem;
+  }
   .card {
     border: 0;
     border-bottom: 0.25rem solid $primary;
@@ -24,12 +27,12 @@
       background: fade-out($white, 0.9);
       border-radius: 100%;
       line-height: 3rem;
-      color: fade-out($white, 0.7);
+      color: $primary;
       &:hover {
-        color: fade-out($white, 0.5);
+        color: fade-out($primary, 0.5);
       }
       &:active {
-        color: $white;
+        color: $primary;
       }
     }
   }

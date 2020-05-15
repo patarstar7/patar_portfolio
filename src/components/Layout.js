@@ -14,6 +14,8 @@ class Layout extends Component {
           query SiteTitleQuery {
             site {
               siteMetadata {
+                author
+                description
                 title
               }
             }
@@ -24,8 +26,25 @@ class Layout extends Component {
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Grayscale' },
-                { name: 'keywords', content: 'site, web' },
+                {
+                  property: `og:title`,
+                  content: data.site.siteMetadata.title,
+                },
+                {
+                  property: `og:description`,
+                  content: data.site.siteMetadata.description,
+                },
+                {
+                  property: `og:type`,
+                  content: `website`,
+                },
+                { name: 'description',
+                  content: data.site.siteMetadata.description 
+                },
+                { 
+                  name: 'keywords', 
+                  content: 'site, web' 
+                },
               ]}
             >
               <html lang="en" />

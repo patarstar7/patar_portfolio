@@ -1,40 +1,42 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Grayscale', // <title>
-  manifestName: 'Grayscale',
-  manifestShortName: 'Landing', // max 12 characters
+  siteTitle: 'Patrick Trillo', // <title>
+  siteDescription: 'Patrick Trillo\'s personal developer portfolio website', // <title>
+  siteAuthor: 'Patrick Trillo', // <title>
+  manifestName: 'PatrickTrilloPortfolio',
+  manifestShortName: 'PT_Portfolio', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-grayscale/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  pathPrefix: `/patricktrillo/`, // This path is subpath of your hosting https://domain/portfolio
+  heading: 'Patrick Trillo',
+  subHeading: 'Full Stack Developer | Full Time Pug Dad',
 
   // social
   socialLinks: [
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/patarstar7/',
     },
     {
       icon: 'fa-linkedin-in',
       name: 'Linkedin',
-      url: 'https://linkedin.com/in/theanubhav/',
+      url: 'https://www.linkedin.com/in/ernestpatricktrillo/',
     },
     {
-      icon: 'fa-twitter',
+      icon: 'fa-instagram',
       name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
+      url: 'https://www.instagram.com/patarstar7/',
     },
     {
-      icon: 'fa-facebook-f',
-      name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      icon: 'far fa-envelope',
+      name: 'Email',
+      url: 'mailto:ernestpatricktrillo@gmail.com',
     },
   ],
-  email: 'anubhav.srivastava00@gmail.com',
-  phone: '000-00000',
-  address: '305 Del Sol, Sunnyvale, CA',
+  email: 'ernestpatricktrillo@gmail.com',
+  phone: '818-577-0599',
+  address: 'I live in San Francisco, CA',
 };
