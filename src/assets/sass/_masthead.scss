@@ -16,7 +16,7 @@
   background-attachment: scroll;
   background-size: cover;
   h1 {
-    font-family: 'Varela Round';
+    font-family: 'Varela Round', Fallback, sans-serif;
     font-size: 2.5rem;
     line-height: 2.5rem;
     letter-spacing: 0.8rem;

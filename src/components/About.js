@@ -1,8 +1,25 @@
 import React from 'react';
 import Emoji from '../components/Emoji';
-import profilePic from '../assets/images/profilePic.jpg';
+import { useStaticQuery, graphql } from "gatsby" 
+import Img from "gatsby-image" 
 
 const About = () => {
+    const data = useStaticQuery(graphql`
+        {
+        file(relativePath: {eq: "assets/images/profilePic.jpg"}) {
+            childImageSharp {
+            fluid(maxWidth: 525, maxHeight: 700) {
+                base64
+                aspectRatio
+                src
+                srcSet
+                sizes
+            }
+            }
+        }
+        }
+    `)
+
     return (
         <section id="about" className="about-section">
             <div className="container">
@@ -15,7 +32,7 @@ const About = () => {
                         </div>
                         <div className="row about-me-container">
                             <div className="col-lg-6 about-me-col">
-                                <img className="img-fluid" src={profilePic} alt="" />
+                                <Img fluid={data.file.childImageSharp.fluid} alt="Patrick and Nomnoms Profile Picture" />
                             </div>
                             <div className="col-lg-6 about-me-col">
                             <h2>Who am I?</h2>
