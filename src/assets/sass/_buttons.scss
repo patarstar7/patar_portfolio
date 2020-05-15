@@ -1,11 +1,31 @@
 .btn {
   box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1) !important;
-  padding: 1.25rem 2rem;
-  font-family: 'Varela Round';
+  padding: 1rem 1.25rem;
+  font-family: 'Varela Round', Fallback, sans-serif;;
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
+}
+
+@media (min-width: 992px) {
+  .btn-right {
+    margin-right: 20px;
+  }
+  
+  .btn-left {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .btn-right {
+    margin: 0 10px;
+  }
+  
+  .btn-left {
+    margin: 0 10px;
+  }
 }
 
 .btn-primary {
