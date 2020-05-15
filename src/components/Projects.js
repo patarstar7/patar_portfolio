@@ -26,12 +26,10 @@ const Projects = () => {
         }
         }
     `)
-    console.log(data.allFile.edges)
     const projectImages = {};
     data.allFile.edges.forEach(element => {
         projectImages[element.node.name] = element.node.childImageSharp.fluid;
     });
-    console.log(projectImages)
     const cs169Project = projectImages['CS169_Project'];
     const cs184Project = projectImages['CS184_Project'];
 
