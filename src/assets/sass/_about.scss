@@ -1,0 +1,46 @@
+.about-section {
+  padding-top: 8rem;  
+  padding-bottom: 3rem;  
+  background: linear-gradient(to bottom, $black 0%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
+  p {
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+  ul {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+  hr {
+    border-color: $primary;
+    border-width: .25rem;
+    width: 30%;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    height: 10px;
+  }
+  h2 {
+    color: rgba(255, 255, 255, 100) !important;
+    padding-bottom: .75rem;
+  }
+  .about-me-header-container {
+    border-bottom: 7px solid $primary;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+  }
+  .about-me-container {
+    margin: 1rem 0rem;
+  }
+  .line-separator {
+    border-color: $primary;
+    border-width: .25rem;
+    width: 30%;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    height: 10px;
+  }
+  .about-me-col {
+    margin: 20px 0px;
+  }
+}

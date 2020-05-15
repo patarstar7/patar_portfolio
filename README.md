@@ -1,1 +1,0 @@
-# patar_portfolio
